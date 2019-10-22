@@ -10,9 +10,20 @@ In your theme, if you would like to insert the field through a hook that is avai
 Here's an example:
 
 ```php
-if ( function_exists( 'sl9_client_portal_insert_hidden_skip_field' ) ) {
-  sl9_client_portal_insert_hidden_skip_field();
-}
+add_action( 'woocommerce_after_add_to_cart_button', 'sl9_client_portal_insert_hidden_skip_field' );
+```
+
+### Manually add field to template/PHP
+
+Sometimes your form HTML does not include an action or filter for you to hook into to manipulate your form HTML, in those cases, it's best to insert the hidden form field directly inside your `<form>` element.
+
+```php
+?>
+<form class="my-form">
+  <?php if ( function_exists( 'sl9_client_portal_insert_hidden_skip_field' ) ) {
+    sl9_client_portal_insert_hidden_skip_field();
+  } ?>
+</form>
 ```
 
 ### Filters
