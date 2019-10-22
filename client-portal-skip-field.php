@@ -97,3 +97,14 @@ function sl9_client_portal_woocommerce_locate_template( $template, $template_nam
   return $template;
 }
 add_filter( 'woocommerce_locate_template', 'sl9_client_portal_woocommerce_locate_template', 10, 3 );
+
+/**
+ * Add default field to comment forms
+ */
+
+function sl9_client_portal_comment_skip_field($fields) {
+		$fields['is_skip'] = sl9_get_client_portal_skip_field();
+		return $fields;
+}
+
+add_filter('comment_form_default_fields', 'sl9_client_portal_comment_skip_field', 20 );

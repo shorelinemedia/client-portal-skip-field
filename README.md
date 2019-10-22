@@ -2,7 +2,9 @@
 
 This plugin adds a hidden input field `<input type="hidden" name="is_skip" id="is_skip" value="true">` to Wordpress forms that aren't true conversions, to skip sending lead data to the client portal.
 
-It works out of the box with Wordpress' native search form, WooCommerce's single product add to cart form, WooCommerce's Cart 'Proceed to Checkout' form, GEO My WP's location search form, and Store locator location search form.
+It works out of the box with Wordpress' native search form, Wordpress' native comment form, WooCommerce's single product add to cart form, WooCommerce's Cart 'Proceed to Checkout' form, GEO My WP's location search form, and Store locator location search form.
+
+The comments form works for non-logged in users out of the box.  If you are using a theme where they use their own comment form function or you have many logged in commenters, you may have to wire up an action or filter in your theme based on how we do it in our plugin.
 
 # Customization
 In your theme, if you would like to insert the field through a hook that is available to you (we do this to add the field to parts of WooCommerce layout), use the function `sl9_client_portal_insert_hidden_skip_field` on any action.
