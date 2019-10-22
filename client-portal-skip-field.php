@@ -45,6 +45,8 @@ add_filter( 'slp_searchlayout', 'sl9_client_portal_filter_hidden_skip_field' );
 function sl9_client_portal_insert_hidden_skip_field() {
 	echo sl9_get_client_portal_skip_field();
 }
+// Custom action to use in templates
+add_action( 'sl9_client_portal_skip_field', 'sl9_client_portal_insert_hidden_skip_field' );
 // Add to single product cart form
 add_action( 'woocommerce_after_add_to_cart_button', 'sl9_client_portal_insert_hidden_skip_field' );
 // Add to the cart form

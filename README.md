@@ -26,6 +26,14 @@ Sometimes your form HTML does not include an action or filter for you to hook in
 </form>
 ```
 
+-- OR --
+
+You can use our built-in action as well:
+
+```php
+<?php do_action( 'sl9_client_portal_skip_field' ); ?>
+```
+
 ### Filters
 
 In some cases, your form HTML might be manipulated with a filter, like the native Wordpress search form. If you have another plugin or theme function that relies on a filter to render the form HTML, you can use the function `sl9_client_portal_filter_hidden_skip_field` to filter your form HTML.
