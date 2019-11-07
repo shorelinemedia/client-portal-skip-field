@@ -17,7 +17,7 @@
  * Return skip field for Client Portal Forms to skip tracking a form as a conversion
  */
 function sl9_get_client_portal_skip_field() {
-	return apply_filters( 'sl9_skip_field_input', '<input type="hidden" name="is_skip" id="is_skip" value="true">' );
+	return apply_filters( 'sl9_skip_field_input', '<input type="hidden" name="is_skip" value="is_skip">' );
 }
 
 /**
