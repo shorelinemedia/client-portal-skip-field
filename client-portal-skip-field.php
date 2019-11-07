@@ -3,7 +3,7 @@
 * Plugin Name: 					Client Portal Skip Form Conversions
 * Plugin URI: 					https://github.com/shorelinemedia/client-portal-skip-field
 * Description: 					This plugin adds a hidden input field <code>&lt;input type=&quot;hidden&quot; name=&quot;is_skip&quot; id=&quot;is_skip&quot; value=&quot;true&quot;&gt;</code> to Wordpress forms that aren't true conversions, to skip sending lead data to the client portal. <a href="https://github.com/shorelinemedia/client-portal-skip-field/blob/master/README.md" target="_blank" rel="noopener">View the README on Github</a>
-* Version: 							1.0.3
+* Version: 							1.0.4
 * Author: 							Shoreline Media
 * Author URI: 					https://shoreline.media
 * License:           		GNU General Public License v2
