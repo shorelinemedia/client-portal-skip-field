@@ -1,6 +1,6 @@
 # Client Portal Skip Field
 
-This plugin adds a hidden input field `<input type="hidden" name="is_skip" id="is_skip" value="true">` to Wordpress forms that aren't true conversions, to skip sending lead data to the client portal.
+This plugin adds a hidden input field `<input type="hidden" name="is_skip" value="is_skip">` to Wordpress forms that aren't true conversions, to skip sending lead data to the client portal.
 
 It works out of the box with Wordpress' native search form, Wordpress' native comment form, WooCommerce's single product add to cart form, WooCommerce's Cart 'Proceed to Checkout' form, GEO My WP's location search form, and Store locator location search form.
 
