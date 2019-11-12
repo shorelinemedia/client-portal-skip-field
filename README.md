@@ -11,7 +11,7 @@ If it's not already installed, you must install the <a href="https://github.com/
 
 <a href="https://github.com/afragen/github-updater/archive/master.zip">Download the ZIP file</a> and uploading the ZIP file to your Wordpress site.  Navigate to Plugins > Add New and click the green "Upload Plugin" button on the top of the page to upload the ZIP file.  Once ZIP is uploaded, you must *activate* the Github Updater plugin.
 
-To install this plugin, navigate to Settings > Github Updater and go to the "Install Plugin" tab.  Paste in our Github URL of `[repo]` and install the plugin.  *Activate* the Client Portal Skip Field plugin on the plugins page.
+To install this plugin, navigate to Settings > Github Updater and go to the "Install Plugin" tab.  Paste in our Github URL of `https://github.com/shorelinemedia/client-portal-skip-field` and install the plugin.  *Activate* the Client Portal Skip Field plugin on the plugins page.
 
 # Customization
 In your theme, if you would like to insert the field through a hook that is available to you (we do this to add the field to parts of WooCommerce layout), use the function `sl9_client_portal_insert_hidden_skip_field` on any action.
