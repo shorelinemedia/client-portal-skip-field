@@ -17,7 +17,17 @@ add_action( 'woocommerce_after_add_to_cart_button', 'sl9_client_portal_insert_hi
 
 ### Manually add field to template/PHP
 
-Sometimes your form HTML does not include an action or filter for you to hook into to manipulate your form HTML, in those cases, it's best to insert the hidden form field directly inside your `<form>` element.
+Sometimes your form HTML does not include an action or filter for you to hook into to manipulate your form HTML, in those cases, it's best to insert the hidden form field directly inside your `<form>` element using our `do_action` method.
+
+```php
+<form class="my-form">
+  <?php do_action( 'sl9_client_portal_skip_field' ); ?>
+</form>
+```
+
+-- OR --
+
+You can use our function directly after checking for the function's existence:
 
 ```php
 ?>
@@ -28,13 +38,6 @@ Sometimes your form HTML does not include an action or filter for you to hook in
 </form>
 ```
 
--- OR --
-
-You can use our built-in action as well:
-
-```php
-<?php do_action( 'sl9_client_portal_skip_field' ); ?>
-```
 
 ### Filters
 
