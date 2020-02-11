@@ -55,6 +55,7 @@ add_action( 'woocommerce_cart_actions', 'sl9_client_portal_insert_hidden_skip_fi
 add_action( 'gmw_search_form_end', 'sl9_client_portal_insert_hidden_skip_field' );
 // Add to KLEO login modal
 add_action( 'fb_popup_button', 'sl9_client_portal_insert_hidden_skip_field' );
+add_action( 'kleo_after_login_form', 'sl9_client_portal_insert_hidden_skip_field' );
 // Add to KLEO register modal
 add_action( 'fb_popup_register_button', 'sl9_client_portal_insert_hidden_skip_field' );
 
